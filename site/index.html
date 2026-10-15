@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website of Imam Mahmoud Harmoush, sharing his work in faith, education, community service, speaking, and religious guidance.">
+  <meta name="theme-color" content="#f7f5ef">
+  <title>Imam Mahmoud Harmoush | Faith, Knowledge & Service</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#home">Mahmoud Harmoush<span class="brand-dot">.</span></a>
+  <nav aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#booking">Appointments</a>
+    <a href="#reflections">Speaking &amp; Community</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="eyebrow">A Personal Website</p><h1>Faith.<br>Knowledge.<br><span>Service.</span></h1>
+      <p class="hero-subtitle">Imam Mahmoud Harmoush</p>
+      <p class="hero-intro">
+        A space for thoughtful reflection, religious guidance,
+        lifelong learning, and meaningful connection.
+      </p>
+      <a class="primary-link" href="#about">Discover More <span>&rarr;</span></a>
+    </div>
+    <div class="hero-art">
+      <img src="assets/mahmoud-harmoush-portrait.jpg" alt="Imam Mahmoud Harmoush">
+      <p class="portrait-caption">Faith &middot; Reflection &middot; Community</p>
+    </div>
+  </section>
+
+  <section class="intro section" id="about"><p class="eyebrow">Professional Profile</p><h2>A career shaped by faith, education, and community service.</h2><p>Imam Mahmoud Harmoush is an Islamic religious leader, educator, speaker, and community advocate whose work has brought together religious service, higher education, family guidance, and interfaith engagement in Southern California.</p><p>He earned a graduate degree in Islamic Studies and Leadership from Claremont School of Theology. His teaching experience includes Arabic Language, the World of Islam, and Middle Eastern Culture and Art at California State University, San Bernardino.</p><p>His leadership experience includes serving as National President of the Muslim Students Association of the United States and Canada during his undergraduate studies at Cal Poly Pomona, as well as participation in the Shura Council of the Islamic Society of North America.</p><p>His public service has included religious instruction, Friday sermons, marriage and family counseling, new-Muslim support, university and community presentations, and interfaith dialogue. He has spoken at churches, universities, and civic forums on Islam, Muslim life, and understanding across faith traditions.</p><p>He was appointed to the City of Riverside Human Relations Commission for a four-year term, contributing to civic efforts focused on discrimination, inclusion, and mutual respect.</p><p>Today, his professional services draw on this breadth of experience to offer Nikah and matrimonial services, religious and social consultation, community speaking, and Friday khutbah engagements.</p><p>His approach emphasizes faith, thoughtful listening, education, compassion, and service.</p></section>
+
+
+  <section class="services section" id="services"><p class="eyebrow">Professional Services</p><h2>Guidance, learning, and meaningful moments.</h2><div class="cards"><article class="card"><span class="card-number">01</span><h3>Nikah &amp; Matrimonial Services</h3><p>Religious guidance and ceremony support for couples and families.</p></article><article class="card"><span class="card-number">02</span><h3>Religious Consultation</h3><p>Faith-centered conversation and guidance on religious and personal questions.</p></article><article class="card"><span class="card-number">03</span><h3>Social &amp; Community Consultation</h3><p>Respectful listening and perspective on family, community, and social matters.</p></article><article class="card"><span class="card-number">04</span><h3>Speaker &amp; Friday Khateeb</h3><p>Guest lectures, community programs, and Friday khutbah engagements by arrangement.</p></article></div></section><section class="booking section" id="booking">
+  <p class="eyebrow">Appointments</p>
+  <h2>Request a conversation or service.</h2>
+  <p class="booking-lead">
+    Choose the service you are seeking, select an available date and time,
+    and send your request. Your appointment is not confirmed until Mahmoud
+    responds personally.
+  </p>
+
+  <div class="booking-app">
+
+    <div class="booking-step">
+      <p class="booking-step-number">01</p>
+      <h3>Choose a service</h3>
+      <div id="booking-service-list" class="booking-service-list"></div>
+    </div>
+
+    <div class="booking-step">
+      <p class="booking-step-number">02</p>
+      <h3>Choose a date</h3>
+
+      <div class="booking-calendar-header">
+        <button type="button" id="booking-prev-month" aria-label="Previous month">&larr;</button>
+        <strong id="booking-month-label"></strong>
+        <button type="button" id="booking-next-month" aria-label="Next month">&rarr;</button>
+      </div>
+
+      <div id="booking-calendar" class="booking-calendar"></div>
+
+      <div id="booking-times" class="booking-times"></div>
+    </div>
+
+    <div class="booking-step">
+      <p class="booking-step-number">03</p>
+      <h3>Your information</h3>
+
+      <div id="booking-selected-summary" class="booking-selected-summary">
+        <span>Select a service to begin.</span>
+      </div>
+
+      <form id="booking-form" class="booking-form">
+
+        <label>
+          <span>Full name</span>
+          <input
+            id="booking-name"
+            name="full_name"
+            type="text"
+            maxlength="120"
+            autocomplete="name"
+            required>
+        </label>
+
+        <label>
+          <span>Email</span>
+          <input
+            id="booking-email"
+            name="email"
+            type="email"
+            maxlength="254"
+            autocomplete="email"
+            required>
+        </label>
+
+        <label>
+          <span>Phone</span>
+          <input
+            id="booking-phone"
+            name="phone"
+            type="tel"
+            maxlength="40"
+            autocomplete="tel"
+            required>
+        </label>
+
+        <label>
+          <span>Message <small>(optional)</small></span>
+          <textarea
+            id="booking-message-input"
+            name="message"
+            maxlength="2000"
+            rows="5"
+            placeholder="Tell Mahmoud anything that would be helpful before the appointment."></textarea>
+        </label>
+
+        <button class="primary-link booking-submit" type="submit">
+          Submit Appointment Request <span>&rarr;</span>
+        </button>
+
+        <div id="booking-message" class="booking-form-message" aria-live="polite"></div>
+
+      </form>
+    </div>
+
+  </div>
+</section>  <section class="reflection section" id="reflections">
+    <p class="eyebrow">Speaking &amp; Community</p>
+    <h2>Faith, learning, and dialogue.</h2>
+    <p>Drawing on experience in religious education, university teaching, community presentations, and interfaith dialogue, Imam Mahmoud Harmoush welcomes opportunities to speak and serve by arrangement.</p>
+  </section>
+
+  <section class="contact section" id="contact">
+    <p class="eyebrow">Get in Touch</p>
+    <h2>Begin a conversation.</h2>
+    <p>For Nikah services, religious consultation, speaking engagements, or community programs, please get in touch.</p>
+    <p><a href="mailto:mahmoudharmoush@gmail.com">mahmoudharmoush@gmail.com</a></p>
+    <p><a href="tel:+19517049997">(951) 704-9997</a></p>
+  </section>
+</main>
+
+<footer>
+  <a class="brand" href="#home">Mahmoud Harmoush<span class="brand-dot">.</span></a>
+  <p>Faith &middot; Knowledge &middot; Service &middot; &copy; 2026</p>
+</footer>
+
+<script src="assets/booking.js"></script>
+</body>
+</html>

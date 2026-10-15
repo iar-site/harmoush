@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mahmoud-harmoush-booking",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-15",
+  "d1_databases": [
+    {
+      "binding": "mahmoud_harmoush_booking",
+      "database_name": "mahmoud-harmoush-booking-local",
+      "database_id": "00000000-0000-0000-0000-000000000001",
+      "preview_database_id": "00000000-0000-0000-0000-000000000001"
+    }
+  ]
+}
